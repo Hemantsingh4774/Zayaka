@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/bar">
+
+    </include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/backarrow"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/backHome_fromchole"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Chole"
+            android:textSize="30sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/white"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:src="@drawable/chole"
+                    android:scaleType="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chole_ingredients"
+                    android:textSize="20sp"
+                    android:textAllCaps="true"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:layout_height="60dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="Watch video"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:backgroundTint="#EA190A"
+                    android:id="@+id/btnvideo"
+                    />
+                <Button
+                    android:layout_height="60dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="Read Article"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="60dp"
+                    android:backgroundTint="#00BCD4"
+                    android:id="@+id/btnarticle"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thankyou!"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>
